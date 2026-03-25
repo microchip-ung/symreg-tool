@@ -44,4 +44,9 @@ if (BUILD_LAN9645X)
 endif()
 
 #######################################################################
+
+add_executable(symreg src/symreg_detect.c)
+install(TARGETS symreg DESTINATION bin)
+
+#######################################################################
 #  vim: set ts=4 sw=4 sts=4 tw=120 cc=120 et ft=cmake :
